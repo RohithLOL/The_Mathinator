@@ -1,10 +1,22 @@
 import streamlit as st
+import random
 
-st.title("Testing one two three")
+greetings = ["Hi there, what :rainbow[Math equation] do need?"
+             ,"We got some :rainbow[Math equation] at the mathinator"
+             ,":rainbow[Quadratic, linear, area, volume,] :rainbow[Math equations]? We got them all"]
 
-with st.container:
-    st.write(st.button(label="Quadratic equation",icon=":material/superscript:"))
-'''
-if quadratic == True:
-    st.text("it works!!")'
-'''
+st.subheader(random.choice(greetings))
+
+st.subheader("")
+
+st.latex(r'''
+x = \frac{-(b)^2 \pm \sqrt{(b^2 -4ac) }} {2a}
+''')
+
+st.latex('''
+a^2 + b^2 = c^2
+''')
+
+st.latex('''
+\pi r^2 =a
+''')
