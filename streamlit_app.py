@@ -11,3 +11,4 @@ with st.expander("**Quadratic formulas**"):
     st.latex(var.quadratic)
 
 st.page_link("pages/page_1.py", label="Page 1")
+st.page_link("page/sub_page/page_2.py")
